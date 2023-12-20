@@ -1,0 +1,7 @@
+Análisis de los requerimientos
+
+Seguramente muchos lectores querrán pasar muy rápidamente por esta sección, 
+especialmente cuando revisen las hojas de los tres capítulos y vean mucho texto 
+y nada de código.
+
+Añadamos esta línea por el final...
