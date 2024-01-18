@@ -1,0 +1,48 @@
+<html>
+<head>
+<title>JotMail</title>
+<script language='javascript'>
+	function validar_en_cliente()
+	{
+		if (!document.form1.usuario.value)
+		{
+			alert('Debe informar el nombre del usuario');
+			return false;
+		}
+		if (!document.form1.psword.value)
+		{
+			alert('Debe informar la contraseña');
+			return false;
+		}	
+		return true;
+	}		
+</script>
+</head>
+<body>
+<center> 
+<img align='left' src='images/newmail.gif'>
+<h1>Correo Web<h1>
+<form name='form1' action='cwpage1.php' method='post'
+	onsubmit='return validar_en_cliente();'>
+<table border='1'>
+<tr>
+ 	<td  colspan='2' align='center'><b>Inicio de sesión de correo</b>
+	</td>
+</tr>
+<tr>
+ 	<td  align='center'>Usuario:</td>
+	<td><input type='text' name='usuario'</td>
+</tr>
+<tr>
+ 	<td  align='center'>Contraseña:</td>
+	<td><input type='text' name='psword'</td>
+</tr>
+<tr>
+ 	<td  colspan='2' align='center'><input type='submit' name='submit' value='Iniciar sesión'>
+	</td>
+</tr>
+</table>
+</form>
+</body>
+</center>
+</html>

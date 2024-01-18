@@ -1,0 +1,53 @@
+<HTML>
+	<HEAD>
+		<TITLE>Inicio de aplicación (c17000.html)</TITLE>	
+		<script language='javascript'>
+	function validar_en_cliente()
+	{
+		if (!document.form1.usuario.value)
+		{
+			alert('Debe informar el nombre del usuario');
+			return false;
+		}
+		if (!document.form1.psword.value)
+		{
+			alert('Debe informar la contraseña');
+			return false;
+		}	
+		return true;
+	}		
+</script>
+	</HEAD>
+	<BODY>
+		<CENTER>
+			<H2>Incio de aplicación</H2>
+			<FORM  name='form1' method='POST' action='c907.php' onsubmit='return validar_en_cliente();'>
+				<TABLE>
+					<TR>
+						<TD ALIGN='LEFT'>Usuario:</TD>
+						<TD ALIGN='LEFT'>
+							<INPUT type='text' name='usuario' size=20>
+						</TD>
+					</TR>
+					<TR>
+						<TD ALIGN='LEFT'>Contraseña:</TD>
+						<TD ALIGN='LEFT'>
+							<INPUT type='password' name='psword' size=20>
+						</TD>
+					</TR>
+					<TR>
+						<TD ALIGN='LEFT'>Aplicación:</TD>
+						<TD ALIGN='LEFT'>
+							<SELECT name='aplicación'>
+								<OPTION value='Administración Web'>Administración Web</OPTION>
+						        <OPTION value='Usuario Web'>Usuario Web</OPTION>
+						</TD>
+					</TR>
+				</TABLE>	
+				<INPUT type='submit' value='Enviar'>
+			</FORM>		
+		</CENTER>
+	</BODY>
+</HTML>
+
+
